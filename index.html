@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAGATI MOTORS - Premium Tractor Solutions</title>
+    <link rel="stylesheet" href="C:\Users\vishw\OneDrive\Documents\hi\styles.css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>PRAGATI MOTORS</h2>
+                    <span>Your Trusted Tractor Partner</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><button class="admin-login-btn" onclick="showAdminLogin()">
+                        <i class="fas fa-cog"></i> Admin
+                    </button></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Power Your Agriculture with <span class="highlight">PRAGATI MOTORS</span></h1>
+                <p>Leading the way in tractor innovation and reliability. From small farms to large agricultural operations, we provide the perfect tractor solutions for every need.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Tractors</a>
+                    <a href="#contact" class="btn btn-secondary">Get Quote</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tractor-placeholder">
+                    <i class="fas fa-tractor"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Tractor Range</h2>
+                <p>Choose from our wide selection of reliable and efficient tractors</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically loaded here from admin panel -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive support for all your agricultural needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Repair</h3>
+                    <p>Expert technicians provide regular maintenance and repair services to keep your tractors running smoothly.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Delivery & Setup</h3>
+                    <p>We deliver and set up your new tractor at your location with complete installation support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training & Support</h3>
+                    <p>Comprehensive training programs to help you get the most out of your tractor investment.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Financing Options</h3>
+                    <p>Flexible financing solutions to make your tractor purchase affordable and convenient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About PRAGATI MOTORS</h2>
+                    <p>With over two decades of experience in the agricultural machinery industry, PRAGATI MOTORS has established itself as a trusted name in tractor sales and service.</p>
+                    <p>We are committed to providing farmers and agricultural businesses with reliable, efficient, and cost-effective tractor solutions that help increase productivity and profitability.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Tractors Sold</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to find your perfect tractor? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Pragati Motors <br>Karbharinagar,Baramati, Maharashtra 413102</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9423579141 <br>+91 9423579141</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@pragatimotors.com<br>sales@pragatimotors.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <!-- Responsive Google Map embed with click redirect -->
+                <!-- Responsive Google Map showing your pinned location with click redirect -->
+<style>
+  .map-wrap { 
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .map-wrap iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+  .map-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+  }
+</style>
+
+<div class="map-wrap">
+  <!-- Transparent overlay so clicking opens Google Maps -->
+  <a class="map-overlay"
+     href="https://maps.app.goo.gl/EfRagGnwvV1EGszL8"
+     target="_blank"
+     rel="noopener"
+     title="Open in Google Maps"></a>
+
+  <!-- Embedded pinned map -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60662.956461737595!2d74.51949865710539!3d18.143874681412992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3a044f4e1a13d%3A0x601ef5a208645bf6!2sPragati%20Motors!5e0!3m2!1sen!2sin!4v1760774787996!5m2!1sen!2sin"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRAGATI MOTORS</h3>
+                    <p>Your trusted partner in agricultural machinery. We're committed to helping farmers succeed with reliable tractor solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Compact Tractors</a></li>
+                        <li><a href="#products">Utility Tractors</a></li>
+                        <li><a href="#products">Heavy-Duty Tractors</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Pragati Motors,Karbharinagar,Baramati </p>
+                    <p><i class="fas fa-phone"></i> +91 9423579141</p>
+                    <p><i class="fas fa-envelope"></i> info@pragatimotors.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PRAGATI MOTORS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="modal">
+        <div class="modal-content small">
+            <div class="modal-header">
+                <h3>Admin Login</h3>
+                <button class="close-btn" onclick="closeAdminLogin()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="adminLoginForm">
+                    <div class="form-group">
+                        <label for="adminUsername">Username</label>
+                        <input type="text" id="adminUsername" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">Password</label>
+                        <input type="password" id="adminPassword" name="password" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeAdminLogin()">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productDetailModal" class="modal">
+        <div class="modal-content product-detail-modal">
+            <div class="modal-header">
+                <h3 id="productDetailTitle">Product Details</h3>
+                <button class="close-btn" onclick="closeProductDetail()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="product-detail-content">
+                    <!-- Product Images Gallery -->
+                    <div class="product-gallery">
+                        <div class="main-image-container">
+                            <img id="mainProductImage" src="" alt="Product Image" class="main-image">
+                            <button class="gallery-nav prev-btn" onclick="previousImage()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="gallery-nav next-btn" onclick="nextImage()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="thumbnail-container" id="thumbnailContainer">
+                            <!-- Thumbnails will be added here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Product Information -->
+                    <div class="product-detail-info">
+                        <h2 id="productDetailName">Product Name</h2>
+                        <div class="product-price-large" id="productDetailPrice">$0</div>
+                        <div class="product-horsepower" id="productDetailHorsepower"></div>
+                        <div class="product-description" id="productDetailDescription">
+                            Product description will appear here.
+                        </div>
+                        
+                        <!-- Contact Buttons -->
+                        <div class="contact-buttons">
+                            <a href="tel:+91 9423579141" class="btn btn-call">
+                                <i class="fas fa-phone"></i>
+                                Call Now
+                            </a>
+                            <a href="https://wa.me/9423579141" target="_blank" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
